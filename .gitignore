@@ -1,0 +1,20 @@
+# deps
+node_modules
+
+# prod
+build
+dist
+
+# misc
+.vscode
+.idea
+.DS_STORE
+
+# cache
+.module-cache
+
+# logs
+*.log*
+
+# tests
+coverage
