@@ -1,0 +1,41 @@
+@import 'src/app/styles/common';
+
+.Container {
+  max-width: 1000px;
+  padding: 16px;
+  display: flex;
+  margin: auto;
+}
+
+.Media {
+  width: 280px;
+  position: relative;
+}
+
+.Avatar {
+  width: 280px;
+  height: 280px;
+  border: 1px solid cl('gray');
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px cl('gray');
+}
+
+.Data {
+  width: 100%;
+  text-align: center;
+}
+
+.Description {
+  color: cl('black', 0.5);
+  margin-top: 5px;
+  display: block;
+
+  span {
+    color: cl('black');
+  }
+}
+
+.Details {
+  margin-left: 42px;
+  width: 100%;
+}

@@ -1,12 +1,20 @@
-import { HomePage } from '@userstory/pages/Home'
-import { AppRoute } from '@userstory/types'
+import { AppRoute } from './types'
+import { UserPage, UsersPage } from './pages'
 
 export default function getAppRoutes(): AppRoute[] {
   return [
     {
       path: '/',
-      component: HomePage,
+      component: UsersPage,
       exact: true,
+    },
+    {
+      path: '/users/:username',
+      component: UserPage,
+    },
+    {
+      path: '/users',
+      component: UsersPage,
     },
     {
       path: '*',

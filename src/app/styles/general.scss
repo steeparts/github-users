@@ -1,0 +1,56 @@
+@import '~normalize.css';
+
+@import 'common';
+
+:root {
+  @if $colors {
+    @each $key, $value in $colors {
+      --color-#{$key}: #{$value};
+      --color-#{$key}--rgb: #{hex-to-rgb($value)};
+    }
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+
+  * {
+    transition: background-color 0.2s ease-out;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 14px;
+}
+
+a {
+  color: cl('primary');
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+strong {
+  font-weight: 700;
+}

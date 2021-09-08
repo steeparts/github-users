@@ -1,0 +1,59 @@
+@import 'src/app/styles/common';
+
+.List {
+  padding: 16px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Item {
+  width: 110px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid cl('gray');
+  border-radius: 10px;
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 0 5px 15px cl('black', 0.15);
+  }
+}
+
+.Link {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 11px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.Avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.Data {
+  background-color: cl('white');
+  border: 1px solid cl('primary');
+  border-radius: 10px;
+  padding: 0 10px;
+  margin-top: 5px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

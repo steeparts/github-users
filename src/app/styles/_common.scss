@@ -1,0 +1,29 @@
+// Variables
+$colors: (
+  'primary': #0096b7,
+  'black': #181818,
+  'white': #f9f8f6,
+  'gray': #e7e7e7,
+);
+
+$font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Functions
+@function hex-to-rgb($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+@function cl($name, $opacity: false) {
+  @if $opacity {
+    @return rgba(var(--color-#{unquote($name)}--rgb), $opacity);
+  } @else {
+    @return var(--color-#{unquote($name)});
+  }
+}
+
+// Mixins
+@mixin button-colors($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+}

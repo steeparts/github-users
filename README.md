@@ -3,7 +3,7 @@
 ## Стек
 
 - [x] [React](https://facebook.github.io/react/) 16.12
-- [x] [React Router](https://github.com/ReactTraining/react-router) 5.2
+- [x] [React Router](https://github.com/ReactTraining/react-router) 5.1
 - [x] [Typescript](https://www.typescriptlang.org/) 4.2
 
 ### Инструменты сборки

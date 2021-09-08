@@ -1,0 +1,39 @@
+@import 'src/app/styles/common';
+
+.Button {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  min-width: 80px;
+  height: 20px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+
+  > * {
+    margin-right: 10px;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &_Primary {
+    @include button-colors(cl('white'), cl('primary'), cl('primary'));
+
+    &:not(:disabled):hover {
+      @include button-colors(
+        cl('white'),
+        cl('primary', 0.9),
+        cl('primary', 0.9)
+      );
+    }
+  }
+}
